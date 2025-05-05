@@ -1,5 +1,6 @@
 nav{
     background-image:url(/img/popular-pasta-dishes-in-italy-891397460.jpg);
+   
     
 
 }
@@ -20,4 +21,30 @@ nav a{
 }
 h1{
     text-align: center;
+}
+.signIn{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.signIn li{
+    color: rgb(13, 14, 13);
+    font-weight: 600;
+    font-size: 50px;
+}
+div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+@media screen {
+    div{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
 }

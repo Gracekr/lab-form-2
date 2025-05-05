@@ -1,25 +1,5 @@
 <!-- nstructions
-TIENDA CON OPCIONES DE COMPRA
-
-Crea una página de pedidos para una tienda, con diferentes opciones de compra,como por ejemplo, un pizzería, 
-que incluya menús desplegables, y casillas seleccionables cuadradas y redondas:
-
-Desplegable: Sr/Sra./Otre (+nombre)
-
-Teléfono
-
-Desplegable tipo de pizza (al menos 6)
-
-Checkboxes: ingredientes extras (poner al menos 4)
-
-Radio button: enviar a casa / venir a buscar
-
-uedes añadir un comentario para el cliente (textarea)
-
-Verificar que se envíe por GET y queden registrados los datos por pares clave-valor
-
-Una vez te funcione, prueba las diferentes opciones para estilizar tu formulario: colores, sombras, 
-bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web para inspirarte! -->
+Ampliar el formulario anterior -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +7,7 @@ bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web p
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <title>Document</title>
+    <title>Formulario complejo</title>
 </head>
 
 <body>
@@ -53,7 +33,7 @@ bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web p
         <fieldset>
             <legend>Datos personales</legend>
             <div><select name="treatment" id="treatment" placeholder="Seleccione un tratamiento">
-                    <option selected disabled>-Seleccione un tratamiento-</option>
+                    <option selected disabled>-Seleccione-</option>
                     <option value="1">Sr.</option>
                     <option value="2">Sra.</option>
                     <option value="3">Otre</option>
@@ -121,7 +101,7 @@ bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web p
             <label><input id="howMany" name="howMany" type="number" min="1" >Cantidad</label>
         </fieldset>
 </fieldset>
-        <fieldset>
+        <fieldset class="extra">
             <legend>
                 <p>Ingredientes extra</p>
             </legend>
@@ -153,8 +133,8 @@ bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web p
 
 
 
-
-        <input type="submit" value="Meter al horno">
+<section>
+        <input type="submit" value="Meter al horno"><input type="reset" value="Empezar de nuevo"></section>
     </form>
 </body>
 
